@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">490704347301-qhhbfjdvot7tmq4a15nqbp9ujqdl3vhh.apps.googleusercontent.com</string>
+    <string name="google_app_id" translatable="false">1:490704347301:android:d2172f763ac41b1f346d4c</string>
+    <string name="gcm_defaultSenderId" translatable="false">490704347301</string>
+    <string name="google_api_key" translatable="false">AIzaSyAxUnPvqilAl2u0W9FUMrHhh5fcnPI9QX4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAxUnPvqilAl2u0W9FUMrHhh5fcnPI9QX4</string>
+    <string name="firebase_database_url" translatable="false">https://alarm-a2427.firebaseio.com</string>
+    <string name="google_storage_bucket" translatable="false">alarm-a2427.appspot.com</string>
+</resources>

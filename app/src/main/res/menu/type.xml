@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/type_1"
+        android:title="Tipe 1"/>
+	<item android:id="@+id/type_2"
+        android:title="Tipe 2"/>
+	<item android:id="@+id/type_3"
+        android:title="Tipe 3"/>
+	<item android:id="@+id/type_4"
+        android:title="Tipe 4"/>
+	<item android:id="@+id/type_5"
+        android:title="Tipe 5"/>
+	<item android:id="@+id/type_6"
+        android:title="Tipe 6"/>
+</menu>
