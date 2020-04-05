@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import com.prod.alarm.admin.HomeActivity;
 import android.widget.RadioButton;
+import android.widget.CompoundButton;
 
 public class SignupActivity extends BaseActivity {
 	EditText nameField, emailField, passwordField, adminCodeField;
@@ -28,24 +29,28 @@ public class SignupActivity extends BaseActivity {
 		passwordField = findViewById(R.id.password);
 		passwordField.setTransformationMethod(new PasswordTransformationMethod());
 		commandant.setChecked(true);
-		commandant.setOnClickListener(new View.OnClickListener() {
+		commandant.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
 				@Override
-				public void onClick(View view) {
-					user.setChecked(false);
-					selectedRole = 0;
-					adminCodeField.setVisibility(View.GONE);
-					adminCodeSeparator.setVisibility(View.GONE);
+				public void onCheckedChanged(CompoundButton p1, boolean checked) {
+					if (checked) {
+						user.setChecked(false);
+						selectedRole = 0;
+						adminCodeField.setVisibility(View.GONE);
+						adminCodeSeparator.setVisibility(View.GONE);
+					}
 				}
 		});
-		user.setOnClickListener(new View.OnClickListener() {
+		user.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
 				@Override
-				public void onClick(View view) {
-					commandant.setChecked(false);
-					selectedRole = 1;
-					adminCodeField.setVisibility(View.VISIBLE);
-					adminCodeSeparator.setVisibility(View.VISIBLE);
+				public void onCheckedChanged(CompoundButton p1, boolean checked) {
+					if (checked) {
+						commandant.setChecked(false);
+						selectedRole = 1;
+						adminCodeField.setVisibility(View.VISIBLE);
+						adminCodeSeparator.setVisibility(View.VISIBLE);
+					}
 				}
 			});
 	}
