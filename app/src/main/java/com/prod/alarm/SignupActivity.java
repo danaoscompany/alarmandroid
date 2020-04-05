@@ -10,8 +10,9 @@ import com.prod.alarm.admin.HomeActivity;
 import android.widget.RadioButton;
 
 public class SignupActivity extends BaseActivity {
-	EditText nameField, emailField, passwordField;
+	EditText nameField, emailField, passwordField, adminCodeField;
 	RadioButton commandant, user;
+	View adminCodeSeparator;
 	int selectedRole = 0;
 
 	@Override
@@ -21,6 +22,8 @@ public class SignupActivity extends BaseActivity {
 		nameField = findViewById(R.id.name);
 		emailField = findViewById(R.id.email);
 		commandant = findViewById(R.id.commandant);
+		adminCodeField = findViewById(R.id.admin_code);
+		adminCodeSeparator = findViewById(R.id.admin_code_separator);
 		user = findViewById(R.id.user);
 		passwordField = findViewById(R.id.password);
 		passwordField.setTransformationMethod(new PasswordTransformationMethod());
@@ -31,6 +34,8 @@ public class SignupActivity extends BaseActivity {
 				public void onClick(View view) {
 					user.setChecked(false);
 					selectedRole = 0;
+					adminCodeField.setVisibility(View.GONE);
+					adminCodeSeparator.setVisibility(View.GONE);
 				}
 		});
 		user.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +44,8 @@ public class SignupActivity extends BaseActivity {
 				public void onClick(View view) {
 					commandant.setChecked(false);
 					selectedRole = 1;
+					adminCodeField.setVisibility(View.VISIBLE);
+					adminCodeSeparator.setVisibility(View.VISIBLE);
 				}
 			});
 	}

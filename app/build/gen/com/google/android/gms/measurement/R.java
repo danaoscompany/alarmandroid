@@ -44,6 +44,8 @@ public final class R {
     }
     public static final class id {
         public static final int activityadminhomeLinearLayout1=0x7f0a0008;
+        public static final int admin_code=0x7f0a000d;
+        public static final int admin_code_separator=0x7f0a000e;
         public static final int circle_2=0x7f0a0006;
         public static final int circle_3=0x7f0a0005;
         public static final int circle_4=0x7f0a0004;
@@ -51,19 +53,19 @@ public final class R {
         public static final int circle_6=0x7f0a0002;
         public static final int circle_7=0x7f0a0001;
         public static final int circle_8=0x7f0a0000;
-        public static final int commandant=0x7f0a000d;
+        public static final int commandant=0x7f0a000f;
         public static final int email=0x7f0a000a;
         public static final int name=0x7f0a000c;
         public static final int password=0x7f0a000b;
         public static final int press=0x7f0a0007;
         public static final int type=0x7f0a0009;
-        public static final int type_1=0x7f0a000f;
-        public static final int type_2=0x7f0a0010;
-        public static final int type_3=0x7f0a0011;
-        public static final int type_4=0x7f0a0012;
-        public static final int type_5=0x7f0a0013;
-        public static final int type_6=0x7f0a0014;
-        public static final int user=0x7f0a000e;
+        public static final int type_1=0x7f0a0011;
+        public static final int type_2=0x7f0a0012;
+        public static final int type_3=0x7f0a0013;
+        public static final int type_4=0x7f0a0014;
+        public static final int type_5=0x7f0a0015;
+        public static final int type_6=0x7f0a0016;
+        public static final int user=0x7f0a0010;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f060000;
