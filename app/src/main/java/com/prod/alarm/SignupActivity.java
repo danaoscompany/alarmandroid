@@ -65,6 +65,7 @@ public class SignupActivity extends BaseActivity {
 
 				@Override
 				public void onResponse(String response) {
+					show(response);
 					dialog.dismiss();
 					if (response.equals("1")) {
 						show("Pendaftaran berhasil");
